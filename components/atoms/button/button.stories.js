@@ -7,12 +7,16 @@ const butonClicked = e => {
   alert("Hello");
 };
 
-export const basicButton = () => {
-  return <Button variant="secondary">Basic button</Button>;
+export const basicButton = () => <Button>Basic button</Button>;
+
+export const iconButton = () => {
+  return <Button icon="user">Icon button</Button>;
 };
+
 export const funcButton = () => (
   <Button onClick={butonClicked}>Fuction button</ Button>
 );
+
 export const linkedButton = () => <Button href="/route">Linked button</Button>;
 
 export default {
